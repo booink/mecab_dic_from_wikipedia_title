@@ -4,6 +4,9 @@ import re
 import subprocess
 from tqdm import tqdm
 
+# e.g. http://nemupm.hatenablog.com/entry/2014/09/26/043904
+
+# NEologdの辞書を使って単語の存在確認をすると、「新型コロナウイルス」が「新型コロナ」「ウイルス」に分かれてしまうため、好みに合わせてどちらを使うか決める
 #MECAB_IPADIC_NEOLOGD_LOCATION = " -d /usr/share/mecab/dic/mecab-ipadic-neologd/"
 #mecab = MeCab.Tagger(MECAB_IPADIC_NEOLOGD_LOCATION)
 mecab = MeCab.Tagger()
